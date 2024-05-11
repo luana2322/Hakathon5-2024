@@ -1,0 +1,46 @@
+.list-todo {
+    width: 500px;
+    margin: 10px auto;
+    font-size: medium;
+    .todo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .title{
+            width: 350px;
+            text-align: left;
+            margin: 0 10px;
+        }
+        .btn{
+            height: 100%;
+            display: inline-block;
+            margin: auto;
+            button{
+                margin: 0 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.add-todo{
+    width: 500px;
+    margin-bottom: 50px;
+    width: 100%;
+
+    .input-todo{
+        width: 75%;
+        padding: 0 15px;
+    }
+
+    .btn-submit{
+        width: 15%;
+        cursor: pointer;
+    }
+
+    input{
+        height: 25px;
+    }
+}

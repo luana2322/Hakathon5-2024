@@ -1,0 +1,96 @@
+.medical-specialist{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba($color: #CFEAFF, $alpha: 0.34);
+    margin: 70px 0;
+    padding: 50px 0;
+    h1{
+        font-size: 35px;
+        font-weight: 900;
+        padding: 20px;
+    }
+    .slider-medical{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .medical{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .background{
+                background-image: url("../../../assets/images/medical_background.png");
+                width: 300px;
+                height: 300px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .img{
+                    width: 200px;
+                    height: 200px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-top: 30px;
+                }
+            }
+            .name{
+                font-weight: 700;
+                color: #5C6169;
+                margin-top: -20px;
+            }
+            .information{
+                margin-top: -20px;
+                padding: 10px;
+                color: #2AA7FF;
+                word-wrap: break-word;
+                width: 250px;
+                font-size: small;
+                font-weight: 700;
+            }
+        }
+    }
+    .slider-btn{
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        .btn{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: 1px solid rgba($color: #5C6169, $alpha: 0.5) ;
+            background-color: rgba($color: #5C6169, $alpha: 0.5);
+            position: relative;
+        }
+
+        .active::after{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid rgba($color: #2AA7FF, $alpha: 0.8) ;
+        }
+
+        .active::before{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color:rgba($color: #2AA7FF, $alpha: 0.8) ;
+            border: 1px solid rgba($color: #2AA7FF, $alpha: 0.8) ;
+        }
+    }
+}

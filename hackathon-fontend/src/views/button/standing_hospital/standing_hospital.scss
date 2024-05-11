@@ -1,0 +1,58 @@
+.standing-hospital{
+    width: calc(100% - 300px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgba($color: #2AA7FF, $alpha: 0.8);
+    padding-bottom: 35px;
+    border-radius: 20px;
+    h1{
+        font-size: 35px;
+        font-weight: 900;
+        color: #1B3C74;
+        padding: 20px;
+    }
+    .slider-hospital{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .hospital{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .img{
+                width: 250px;
+                height: 250px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .name{
+                font-weight: 700;
+                color: #5C6169;
+            }
+            .information{
+                margin-top: -15px;
+                padding: 10px;
+                color: #5C6169;
+                word-wrap: break-word;
+                width: 250px;
+                font-size: small;
+            }
+            .arrowright{
+                width: 170px;
+                height: 35px;
+                border-radius: 20px;
+                background-color: rgba($color: #2AA7FF, $alpha: 0.8);
+                background-image: url("../../../assets/images/arrowright.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 60px;
+            }
+        }
+        .hospital:hover{
+            cursor: pointer;
+        }
+    }
+}
